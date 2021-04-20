@@ -1,110 +1,68 @@
-import React, { FunctionComponent } from "react";
-import * as ReactBootStrap from "react-bootstrap";
-import "../App.css";
-import search from '../assets/Images/search.png'
-import newsfeed from '../assets/Images/newsfeed.png'
-import logout from "../assets/Images/logout.png";
-import projects from "../assets/Images/projects.png";
-import workshop from '../assets/Images/workshop.png'
-import bell from '../assets/Images/bell.png'
-import hackathon from '../assets/Images/hackathon.png'
+import React, {FunctionComponent} from 'react';
+import '../App.css';
+import 'react-tippy/dist/tippy.css';
+import {Tooltip} from 'react-tippy';
+import HomeIcon from '@material-ui/icons/Home';
+import EventIcon from '@material-ui/icons/Event';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import SearchIcon from '@material-ui/icons/Search';
+import RateReviewIcon from '@material-ui/icons/RateReview';
 
 const Header: FunctionComponent = () => {
   return (
-    <div className="header">
-      <ReactBootStrap.Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
-        <ReactBootStrap.Navbar.Brand>PlatformX</ReactBootStrap.Navbar.Brand>
-        <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
-          <ReactBootStrap.Nav className="searchbar">
-            <ReactBootStrap.Form inline>
-              <ReactBootStrap.FormControl type="text" placeholder="Search" />
-              <ReactBootStrap.Navbar.Brand href="searchicon">
-                <img
-                  src={search}
-                  height="20"
-                  width="20"
-                  alt="searchicon"
+    <nav className="navbar">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <h3 className="projectname">PlatformX</h3>
+        </div>
+
+        <div className="icons row">
+          <div className="homeicon col-sm">
+            <Tooltip title="Home">
+              <HomeIcon fontSize="large"></HomeIcon>
+            </Tooltip>
+          </div>
+
+          <div className="hackathonicon col-sm">
+            <Tooltip title="Hackathon">
+              <AssignmentIcon fontSize="large"></AssignmentIcon>
+            </Tooltip>
+          </div>
+
+          <div className="projectsicon col-sm">
+            <Tooltip title="Projects">
+              <RateReviewIcon fontSize="large"></RateReviewIcon>
+            </Tooltip>
+          </div>
+
+          <div className="workshopsicon col-sm">
+            <Tooltip title="Workshops">
+              <EventIcon fontSize="large"></EventIcon>
+            </Tooltip>
+          </div>
+        </div>
+
+        <div className="nav navbar-right">
+          <div className="container h-100">
+            <div className="d-flex justify-content-center h-100">
+              <div className="searchbar">
+                <input
+                  className="search_input"
+                  type="text"
+                  placeholder="Search"
                 />
-              </ReactBootStrap.Navbar.Brand>
-            </ReactBootStrap.Form>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="feedlogo">
-            <ReactBootStrap.Navbar.Brand href="feed">
-              <img
-                src={newsfeed}
-                width="35"
-                height="35"
-                alt="feedlogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="hackathonlogo">
-            <ReactBootStrap.Navbar.Brand href="hackathons">
-              <img
-                src={hackathon}
-                width="35"
-                height="35"
-                alt="hackathonlogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="projectslogo">
-            <ReactBootStrap.Navbar.Brand href="projects">
-              <img
-                src={projects}
-                width="35"
-                height="35"
-                alt="projectslogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="workshopslogo">
-            <ReactBootStrap.Navbar.Brand href="workshops">
-              <img
-                src={workshop}
-                width="35"
-                height="35"
-                alt="workshopslogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="belllogo">
-            <ReactBootStrap.Navbar.Brand href="notification">
-              <img
-                src={bell}
-                width="35"
-                height="35"
-                alt="notificationlogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav className="logoutlogo">
-            <ReactBootStrap.Navbar.Brand href="logout">
-              <img
-                src={logout}
-                width="35"
-                height="35"
-                alt="logoutlogo"
-              />
-            </ReactBootStrap.Navbar.Brand>
-          </ReactBootStrap.Nav>
-
-          <ReactBootStrap.Nav></ReactBootStrap.Nav>
-        </ReactBootStrap.Navbar.Collapse>
-      </ReactBootStrap.Navbar>
-    </div>
+                <a className="search_icon">
+                  <Tooltip title="search">
+                    <SearchIcon></SearchIcon>
+                  </Tooltip>
+                  <i className="fas fa-search"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 
