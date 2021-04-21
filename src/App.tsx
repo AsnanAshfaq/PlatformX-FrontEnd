@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Header from "./components/Header";
-function App() {
+const App: FunctionComponent = () => {
   return <Header />;
-}
+};
 
 export default App;
