@@ -1,0 +1,38 @@
+.card-container {
+  background-color: gray;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+.user_image {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.text {
+  width: 80%;
+  position: relative;
+  margin-left: 8px;
+  top: -70px;
+}
+.user_name {
+  position: relative;
+  left: 78px;
+  top: -60px;
+  width: max-content;
+  font-weight: bold;
+}
+.date {
+
+  width: max-content;
+  position: relative;
+  left: 78px;
+  top: -70px;
+  font-size: small;
+}
+.post_image {
+  width: 100%;
+  position: relative;
+  top: -70px;
+}

@@ -1,0 +1,74 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.137);
+  height: 70px;
+  position: fixed;
+  top: 0;
+}
+.homeicon:hover {
+  background-color: gray;
+  border-radius: 50px;
+}
+.hackathonicon:hover {
+  background-color: gray;
+  border-radius: 50px;
+}
+.projectsicon:hover {
+  background-color: gray;
+  border-radius: 50px;
+}
+.workshopsicon:hover {
+  background-color: gray;
+  border-radius: 50px;
+}
+
+.homeicon {
+  position: relative;
+  right: 150px;
+}
+.hackathonicon {
+  position: relative;
+  right: 90px;
+}
+.projectsicon {
+  position: relative;
+  right: 30px;
+}
+.workshopsicon {
+  position: relative;
+  right: -30px;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: white;
+  transition: width 0.4s linear;
+}
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+}

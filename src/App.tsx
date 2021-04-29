@@ -1,14 +1,11 @@
-import React, { FunctionComponent } from "react";
-import Header from "./components/Header";
-import Left from "./components/LeftPanel";
-import RightPanel from "./components/RightPanel";
+import React, {FunctionComponent} from 'react';
+import Home from './pages/Home';
 
 const App: FunctionComponent = () => {
   return (
-    <>
-      <Header />
-      <Left />
-    </>
+    <div>
+      <Home />
+    </div>
   );
 };
 
