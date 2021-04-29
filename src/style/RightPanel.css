@@ -11,7 +11,7 @@
 }
 
 .chat_panel_header {
-  background-color:rgb(128,128,128);
+  background-color: rgb(128, 128, 128);
   font-weight: 900;
   border-radius: 10px;
 }
@@ -20,7 +20,7 @@
   overflow: auto;
   margin-top: 10px;
   border-radius: 10px;
-  background-color:darkgray;
+  background-color: darkgray;
 }
 .articles_container {
   max-height: 300px;
@@ -30,7 +30,6 @@
   background-color: aqua;
   border-radius: 10px;
   background-color: darkgray;
-
 }
 .article_image {
   width: 80px;
@@ -38,11 +37,10 @@
   overflow: auto;
 }
 .articles_panel_header {
-  background-color: rgb(128,128,128);
+  background-color: rgb(128, 128, 128);
   width: auto;
   margin-top: 20px;
   font-weight: 900;
-
 }
 .article_title {
   position: relative;
@@ -66,22 +64,15 @@
 .article_date {
   font-size: small;
 }
-/* width */
 ::-webkit-scrollbar {
   width: 7px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(128,128,128); 
+  background: rgb(128, 128, 128);
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(91,91,91); 
+  background: rgb(91, 91, 91);
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
