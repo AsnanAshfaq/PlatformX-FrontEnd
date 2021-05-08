@@ -64,18 +64,4 @@
 .article_date {
   font-size: small;
 }
-::-webkit-scrollbar {
-  width: 7px;
-  
-}
-::-webkit-scrollbar-track {
-  background: rgb(128, 128, 128);
-  
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 60px;
-  background: rgb(91, 91, 91);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+

@@ -25,36 +25,30 @@ const Icons: FunctionComponent<props> = ({className, label, children}) => {
 
 const LeftPanel: FunctionComponent = () => {
   return (
-    
-      <div className="left_panel">
-        <div className="profilepic">
-          <img
-            src={saifu}
-            className="rounded-circle"
-            alt="..."
-            height="200px"
-          />
-        </div>
-        <div className="name">Muhammad Saif Waheed Raja</div>
-        <div className="username">safuraja7</div>
-        <div className="info">
-          <Icons className={'favourites'} label={'Favorites'}>
-            <StarsIcon color="primary" />
-          </Icons>
-          <Icons className={'mostrecent'} label={'Most Recent'}>
-            <RecentActorsIcon color="primary" />
-          </Icons>
-          <Icons className={'mostrecent'} label={'Saved'}>
-            <BookmarksIcon color="primary" />
-          </Icons>
-          <Icons className={'followers'} label={'Followers'}>
-            <PeopleAltIcon color="primary" />
-          </Icons>
-          <Icons className={'groups'} label={'Groups'}>
-            <GroupWorkIcon color="primary" />
-          </Icons>
-        </div>
+    <div className="left_panel">
+      <div className="profilepic">
+        <img src={saifu} className="rounded-circle" alt="..." height="200px" />
       </div>
+      <div className="name">Muhammad Saif Waheed Raja</div>
+      <div className="username">safuraja7</div>
+      <div className="info">
+        <Icons className={'favourites'} label={'Favorites'}>
+          <StarsIcon color="primary" />
+        </Icons>
+        <Icons className={'mostrecent'} label={'Most Recent'}>
+          <RecentActorsIcon color="primary" />
+        </Icons>
+        <Icons className={'mostrecent'} label={'Saved'}>
+          <BookmarksIcon color="primary" />
+        </Icons>
+        <Icons className={'followers'} label={'Followers'}>
+          <PeopleAltIcon color="primary" />
+        </Icons>
+        <Icons className={'groups'} label={'Groups'}>
+          <GroupWorkIcon color="primary" />
+        </Icons>
+      </div>
+    </div>
   );
 };
 

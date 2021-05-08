@@ -1,0 +1,47 @@
+.card {
+  height: max-content;
+}
+.title {
+  position: relative;
+  height: 130px;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+.container {
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(128, 128, 128);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 60px;
+  background: rgb(91, 91, 91);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.row{
+  font-weight: bolder;
+}
+.prizes{
+  margin-top: -70px;
+  margin-left: 160px;
+}
+.status{
+  margin-top: -41px;
+  margin-left: 390px;
+}
+.participants{
+  margin-top: 5px;
+  margin-left: 160px;
+}
+.days_left{
+   margin-top: -40px;
+  margin-left: 390px;
+}

@@ -48,35 +48,35 @@ export const Articles = [
     article_desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.', // random text
     date: new Date (),
   },
-   {
+  {
     id: 2,
     article_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // image url
-    article_title: 'Technology', // random text
+    article_title: 'Technology', // random textk0
     article_desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.', // random text
     date: new Date (),
   },
-   {
+  {
     id: 3,
     article_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // image url
     article_title: 'Technology', // random text
     article_desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.', // random text
     date: new Date (),
   },
-   {
+  {
     id: 4,
     article_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // image url
     article_title: 'Technology', // random text
     article_desc: 'Technology Trends : Construction industry is evolving and changing', // random text
     date: new Date (),
   },
-   {
+  {
     id: 5,
     article_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // image url
     article_title: 'Technology', // random text
     article_desc: 'Technology Trends : Construction industry is evolving and changing', // random text
     date: new Date (),
   },
-   {
+  {
     id: 6,
     article_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // image url
     article_title: 'Technology', // random text
@@ -122,3 +122,91 @@ export const Chat = [
     user_name: 'Saifu', // random text
   },
 ];
+export const HackathonsCard = [
+  {
+    id: 1,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '23 prizes in total',
+    status: 'open',
+    participants: 47,
+  },
+  {
+    id: 2,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '23 prizes in total',
+    status: 'open',
+    participants: 47,
+  },
+  {
+    id: 3,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '123',
+    status: 'asd',
+    participants: 23,
+  },
+  {
+    id: 3,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '123',
+    status: 'asd',
+    participants: 23,
+  },
+  {
+    id: 3,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '123',
+    status: 'asd',
+    participants: 23,
+  },
+  {
+    id: 3,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '123',
+    status: 'asd',
+    participants: 23,
+  },
+  {
+    id: 3,
+    hackathon_image: 'https://www.tricksclub.com/wp-content/uploads/2018/05/Boy-With-Camera-FB-DP.png', // pick  from net
+    hackathon_title: 'The Worthy Web App Challenge',
+    days_left: 23,
+    prizes: '123',
+    status: 'asd',
+    participants: 23,
+  },
+];
+
+export const HackathonFilters = [
+  {
+    id: "location",
+    tag: "Location",
+    subtag: ["Online","Onsight"]
+  },
+  {
+    id: "status",
+    tag: "Status",
+    subtag: ["Upcoming","Open","Ended"]
+  },
+  {
+    id: "interest tags",
+    tag: "Interest tags",
+    subtag: ["Social Good" ,"Machine Learning/AI","COVID - 19","Productivity" , "Blockchain"]
+  },
+  {
+    id: "Length",
+    tag: "Length",
+    subtag: ["1-6 days","1-4 Weeks","1+ Month"]
+  }
+]

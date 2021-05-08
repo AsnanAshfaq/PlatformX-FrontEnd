@@ -1,5 +1,5 @@
 import React, {FunctionComponent} from 'react';
-import '../App.css';
+import '../../App.css';
 import 'react-tippy/dist/tippy.css';
 import {Tooltip} from 'react-tippy';
 import HomeIcon from '@material-ui/icons/Home';
@@ -7,7 +7,7 @@ import EventIcon from '@material-ui/icons/Event';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import SearchIcon from '@material-ui/icons/Search';
 import RateReviewIcon from '@material-ui/icons/RateReview';
-import '../style/Header.css';
+import '../../style/Header.css';
 
 const SearchComponent: FunctionComponent = () => {
   return (
@@ -38,37 +38,27 @@ const HeaderIcon: FunctionComponent<props> = ({className, title, children}) => {
 
 const Header: FunctionComponent = () => {
   return (
-    <nav className="navbar  sticky-top">
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <h3 className="projectname">PlatformX</h3>
-        </div>
+    <nav className="navbar navbar-expand sticky-top navbar-light bg-dark">
+      <p className="navbar-brand">PlatformX</p>
+      <div className="d-flex justify-content-center mr-5">
+        <HeaderIcon className="homeicon col-sm" title="Home">
+          <HomeIcon fontSize="large" />
+        </HeaderIcon>
 
-        <div className="icons row">
-          <HeaderIcon className="homeicon col-sm" title="Home">
-            <HomeIcon fontSize="large" />
-          </HeaderIcon>
+        <HeaderIcon className="hackathonicon col-sm" title="Hackathon">
+          <AssignmentIcon fontSize="large" />
+        </HeaderIcon>
 
-          <HeaderIcon className="hackathonicon col-sm" title="Hackathon">
-            <AssignmentIcon fontSize="large" />
-          </HeaderIcon>
+        <HeaderIcon className="projectsicon col-sm" title="Projects">
+          <RateReviewIcon fontSize="large" />
+        </HeaderIcon>
 
-          <HeaderIcon className="projectsicon col-sm" title="Projects">
-            <RateReviewIcon fontSize="large" />
-          </HeaderIcon>
-
-          <HeaderIcon className="workshopsicon col-sm" title="Workshops">
-            <EventIcon fontSize="large" />
-          </HeaderIcon>
-        </div>
-
-        <div className="nav navbar-right">
-          <div className="container h-100">
-            <div className="d-flex justify-content-center h-100">
-              <SearchComponent />
-            </div>
-          </div>
-        </div>
+        <HeaderIcon className="workshopsicon col-sm" title="Workshops">
+          <EventIcon fontSize="large" />
+        </HeaderIcon>
+      </div>
+      <div className="nav navbar-right">
+        <SearchComponent />
       </div>
     </nav>
   );
