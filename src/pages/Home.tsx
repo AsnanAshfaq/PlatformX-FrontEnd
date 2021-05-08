@@ -18,6 +18,7 @@ const Home: FunctionComponent = () => {
       <div className="container-fluid">
         <div className="row">
           <Filters data={HackathonFilters} />
+
           <div className="column">
             <h2 className="title bg-dark w-50 mx-auto pl-auto pt-4 text-center">
               Join the world's best online and in-person hackathons and win

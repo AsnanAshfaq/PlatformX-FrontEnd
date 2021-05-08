@@ -3,7 +3,7 @@ import "../../style/Hackathons/LeftPanel.css";
 import { HackathonFilters } from "../../assets/Constant/sample.js";
 
 type props = {
-  tags: string;
+  tags?: string;
   subTag: string[];
 };
 
@@ -14,9 +14,9 @@ const Tags: FC<props> = ({ subTag, tags }) => {
         {tags}
       </p>
       <ul className="list-group">
-        {subTag.map((subtag) => (
+        {subTag.map((tag) => (
           <li className="list-group-item bg-dark mx-auto d-flex flex-column">
-            {subtag}
+            {tag}
           </li>
         ))}
       </ul>
