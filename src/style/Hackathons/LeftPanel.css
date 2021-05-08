@@ -1,0 +1,17 @@
+.container-fluid {
+  background-color: rgb(24,25,26);
+  height: max-content;
+}
+.left_panel {
+  background-color: gray;
+  position: fixed;
+  border-top-right-radius: 15px;
+  height: 43rem; 
+  margin-top: 5%;
+  
+}
+.title{
+    margin-top: 50px;
+    height: fit-content;
+    max-height: fit-content;
+}

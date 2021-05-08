@@ -1,0 +1,36 @@
+.right_panel {
+  background-color: rgb(128,128,128);
+  width: 20%;
+  position: absolute;
+  margin-top: 4.7%;
+  height: max-content;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-radius: 10px;
+  position: fixed;
+}
+.user_image {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.user_name {
+  position: relative;
+  left: 78px;
+  top: -60px;
+  width: max-content;
+  font-weight: bold;
+}
+.chat_panel_header {
+  background-color: rgb(128, 128, 128);
+  font-weight: 900;
+  border-radius: 10px;
+}
+.chat_container {
+  max-height: 650px;
+  overflow: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgb(128,128,128);
+}
