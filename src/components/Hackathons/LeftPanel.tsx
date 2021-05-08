@@ -24,10 +24,13 @@ const Tags: FC<props> = ({ subTag, tags }) => {
   );
 };
 
-const LeftPanelHackathons: FC = () => {
+type Props = {
+  data: any[];
+};
+const LeftPanelHackathons: FC<Props> = ({ data }) => {
   return (
     <div className="left_panel  vertical-nav w-25 mr-4" id="sidebar">
-      {HackathonFilters.map((item) => (
+      {data.map((item) => (
         <Tags tags={item.tag} subTag={item.subtag} key={item.id} />
       ))}
     </div>
